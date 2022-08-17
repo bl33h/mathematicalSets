@@ -10,7 +10,7 @@
 import random
 
 # Universe set
-u = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+U = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
 
 # Empty sets
 set1 = []
@@ -58,4 +58,14 @@ differenceOperation = B.difference(A)
 print("\nB-A :")
 print(differenceOperation)
 
-#
+# Complement from A to U
+differenceOperation = U.difference(A)
+print("\nA∁ :")
+print(differenceOperation)
+
+# Complement from B to U
+differenceOperation = U.difference(B)
+print("\nB∁ :")
+print(differenceOperation)
+
+# Search for a specific element in one of the sets
