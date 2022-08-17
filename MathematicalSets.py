@@ -30,7 +30,5 @@ for i in range(size):
 
 # Print of each set
 for i in range(size):
-    #print("Mostrando los datos de la persona", i + 1)
-
     print("First set:", set1[i])
     print("Second set:", set2[i])
