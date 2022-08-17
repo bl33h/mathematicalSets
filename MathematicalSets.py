@@ -39,21 +39,23 @@ B = {set2[0], set2[1], set2[2], set2[3], set2[4], set2[5], set2[6], set2[7], set
 
 # Operations
 # Union
-union_operation = A.union(B)
+unionOperation = A.union(B)
 print("\nA union B :")
-print(union_operation)
+print(unionOperation)
 
 # Intersection
-intersection_operation = A.intersection(B)
+intersectionOperation = A.intersection(B)
 print("\nA intersection B :")
-print(intersection_operation)
+print(intersectionOperation)
 
 # Difference from A to B
-difference_operation = A.difference(B)
+differenceOperation = A.difference(B)
 print("\nA-B :")
-print(difference_operation)
+print(differenceOperation)
 
 # Difference from B to A
-difference_operation = B.difference(A)
+differenceOperation = B.difference(A)
 print("\nB-A :")
-print(difference_operation)
+print(differenceOperation)
+
+#
