@@ -6,9 +6,6 @@
     #- Creation: 01/08/2022
     #- Last modification: 16/08/2022
 
-# Imports
-import random
-
 # Universe set
 U = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
 
@@ -54,9 +51,9 @@ print("\nA-B :")
 print(differenceOperation)
 
 # Difference from B to A
-differenceOperation = B.difference(A)
+differenceOperation1 = B.difference(A)
 print("\nB-A :")
-print(differenceOperation)
+print(differenceOperation1)
 
 # Complement from A to U
 differenceOperation = U.difference(A)
@@ -64,8 +61,51 @@ print("\nA∁ :")
 print(differenceOperation)
 
 # Complement from B to U
-differenceOperation = U.difference(B)
+differenceOperation1 = U.difference(B)
 print("\nB∁ :")
-print(differenceOperation)
+print(differenceOperation1)
 
 # Search for a specific element in one of the sets
+# Boolean       
+keepGoing = True
+
+# While cycle
+while keepGoing:
+    print("\n--- Would you like to search for a specific element in one of the sets? ---\n")
+    print("1. Yes")
+    print("2. No")
+    
+    options = input("Type the number that corresponds to the option you wanna execute: ")
+    
+    # First option
+    if options == "1": # Search for a specific element in one of the sets
+        cont = True
+        print("\nIn what set would you like to check the existence of the element?")
+        while cont:
+            print("1. First set.")
+            print("2. Second set.")
+            choice = input(" ")
+            if choice == "1":
+                searchableElement = input("Type element you would like to search: ")
+                if (searchableElement in set1):
+                    print("\nThe first set contains this element.")
+                    keepGoing = False
+                else:
+                    print("\nThe element was NOT found in the first set.")
+                break
+            if choice == "2":
+                print()
+                searchableElement = input("Type element you would like to search: ")
+                if (searchableElement in set2):
+                    print("\nThe second set contains this element.")
+                else:
+                    print("\nThe element was NOT found in the second set.")
+            else:
+                print("\nERROR: Please type a valid option.")
+
+    
+    elif options == "2":
+        keepGoing = False
+    
+    else:
+            print("\nERROR: Please type a valid option.")
