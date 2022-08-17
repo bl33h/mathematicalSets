@@ -30,6 +30,30 @@ for i in range(size):
 
 # Print of each set
 for i in range(1):
-    print("First set (A):", set1[0], set1[1], set1[2], set1[3], set1[4], set1[5], set1[6], set1[7], set1[8], set1[9])
+    print("\nFirst set (A):", set1[0], set1[1], set1[2], set1[3], set1[4], set1[5], set1[6], set1[7], set1[8], set1[9])
     print("Second set (B):", set2[0], set2[1], set2[2], set2[3], set2[4], set2[5], set2[6], set2[7], set2[8], set2[9])
 
+# Change from mutable to immutable
+A = {set1[0], set1[1], set1[2], set1[3], set1[4], set1[5], set1[6], set1[7], set1[8], set1[9]}
+B = {set2[0], set2[1], set2[2], set2[3], set2[4], set2[5], set2[6], set2[7], set2[8], set2[9]}
+
+# Operations
+# Union
+union_operation = A.union(B)
+print("\nA union B :")
+print(union_operation)
+
+# Intersection
+intersection_operation = A.intersection(B)
+print("\nA intersection B :")
+print(intersection_operation)
+
+# Difference from A to B
+difference_operation = A.difference(B)
+print("\nA-B :")
+print(difference_operation)
+
+# Difference from B to A
+difference_operation = B.difference(A)
+print("\nB-A :")
+print(difference_operation)
