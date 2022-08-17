@@ -21,7 +21,7 @@ size = 10
 
 # File reading and elements added by console
 for i in range(size):
-    print("Enter 10 respective elements for each set, remember that they are only the letters of the alphabet and the digits on your keyboard", i + 1)
+    print("\nEnter 10 respective elements for each set, remember that they are only the letters of the alphabet and the digits on your keyboard", i + 1)
     item1 = input("Item for the first set: ")
     item2 = input("Item for the second set: ")
 
