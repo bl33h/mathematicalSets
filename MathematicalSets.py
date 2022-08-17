@@ -29,6 +29,7 @@ for i in range(size):
     set2.append(item2)
 
 # Print of each set
-for i in range(size):
-    print("First set:", set1[i])
-    print("Second set:", set2[i])
+for i in range(1):
+    print("First set (A):", set1[0], set1[1], set1[2], set1[3], set1[4], set1[5], set1[6], set1[7], set1[8], set1[9])
+    print("Second set (B):", set2[0], set2[1], set2[2], set2[3], set2[4], set2[5], set2[6], set2[7], set2[8], set2[9])
+
