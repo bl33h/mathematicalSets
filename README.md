@@ -1,1 +1,1 @@
-# MathematicalSets
+# mathematicalSets
